@@ -1,4 +1,5 @@
 # 5-Stage-Pipelined-CPU
+
 This projects introduces the idea of the pipelining technique for building a fast CPU. 
 Design implementation and testing of the five-stage pipelined CPU (Instruction Fetch, Instruction Decode ) using the Xilinx design package for Field Programmable Gate Arrays (FPGAs)
 
@@ -15,7 +16,7 @@ We have five stages: IF, ID, EXE, MEM, and WB. The PC can be considered as the f
  
 **2. Circuits of the Instruction Fetch Stage**
 
-![Typing-Chart](https://github.com/zbl5332/5-Stage-Pipelined-CPU/blob/662acf7cf58baf81e4e155c1ff2ac066337c6e9b/Typing-Chart-IF-Stage.png)
+![Typing-Chart](https://github.com/zbl5332/5-Stage-Pipelined-CPU/blob/008a7ebafd4a2666f68b94658828cf95d161d2b6/Typing-Chart.png)
 
 In the first clock cycle in Figure 1(b), the first lw instruction is being fetched. 
 
@@ -57,7 +58,11 @@ It is in the fifth cycle the first instruction entered the WB stage.
 
 The memory data is selected and will be written into the register file at the end of the cycle. All the control signal have a prefix “w”. The second instruction entered the MEM stage; the third instruction entered the EXE stage; the fourth instruction is being decoded in the ID stage; and the fifth instruction is being fetched in the IF stage. All the six pipeline registers are updated at the end of the cycle (the destination register is considered as the six pipeline register). 
 
-Then the first instruction is committed. In each of the forth coming clock cycles, an instruction will be commited and a new instruction will enter the pipeline. We use the structure shown below as a baseline for the design of our pipelined CPU.
+Then the first instruction is committed. In each of the forth coming clock cycles, an instruction will be commited and a new instruction will enter the pipeline. 
+
+**We use the structure shown below as a baseline for the design of our pipelined CPU**
+
+![Stages](https://github.com/zbl5332/5-Stage-Pipelined-CPU/blob/008a7ebafd4a2666f68b94658828cf95d161d2b6/Stages.png)
 
 **Floor Planning**
 
