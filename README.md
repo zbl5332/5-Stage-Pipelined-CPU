@@ -7,7 +7,7 @@ Design implementation and testing of the five-stage pipelined CPU (Instruction F
 
 **1. Pipelining**
 
-Pipelining is an implementation technique in which multiple instructions are overlapped in execution. The five stage pipelined CPU allows overlapping execution of multiple instructions. Although an instruction takes five clock cycle to pass through the pipeline, a new instruction can enter the pipeline during every clock cycle. 
+Pipelining is an implementation technique in which multiple instructions are overlapped in execution. The five stage pipelined CPU allows overlapping execution of multiple instructions. Although an instruction takes five clock cycle to pass through the pipeline, a new instruction can enter the pipeline during every clock cycle. 
 
 Under ideal circumstances, the pipelined CPU can produce a result in every clock cycle. Because in a pipelined CPU there are multiple operations in each clock cycle, we must save the temporary results in each pipeline stage into pipeline registers for use in the follow-up stages. 
 
