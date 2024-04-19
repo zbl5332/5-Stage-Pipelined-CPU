@@ -1,7 +1,7 @@
 # 5-Stage-Pipelined-CPU
 
 This projects introduces the idea of the pipelining technique for building a fast CPU. 
-Design implementation and testing of the five-stage pipelined CPU (Instruction Fetch, Instruction Decode ) using the Xilinx design package for Field Programmable Gate Arrays (FPGAs)
+Design implementation and testing of the five-stage pipelined CPU (Instruction Fetch, Instruction Decode, Instruction Execute, Memory, Writeback) using the Xilinx design package for Field Programmable Gate Arrays (FPGAs)
 
 **Device: XC7Z010-CLG400-1**
 
